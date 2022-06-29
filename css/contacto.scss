@@ -1,0 +1,42 @@
+@import "./base/variables";
+@import "./base/base";
+@import "./base/transitions";
+@import "./base/mixins";
+@import "./components/header";
+@import "./components/footer";
+
+
+.contacto{
+    margin: 10vh 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow:0 5px 10px rgba(0, 0, 0,0.2);
+
+        ion-icon{
+            font-size: 10rem;
+        }
+
+
+        a{
+            color: $color-primary;
+            font-size: 2rem;
+            text-decoration: none;
+        }
+
+    }
+
+
+}

@@ -1,0 +1,74 @@
+
+
+
+@keyframes animation-fade{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity:1;
+    }
+
+
+}
+
+@keyframes animation-to-up{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100%{
+        opacity:1;
+        transform: translateY(0);
+    }
+
+
+}
+
+
+@keyframes animation-to-right{
+    0%{
+        opacity: 0;
+        transform: translate(-100%);
+    }
+
+    100%{
+        opacity:1;
+        transform: translate(0);
+    }
+
+
+}
+
+
+@keyframes animation-to-left{
+    0%{
+        opacity: 0;
+        transform: translate(100%);
+    }
+
+    100%{
+        opacity:1;
+        transform: translate(0);
+    }
+
+
+}
+
+
+
+@keyframes animation-to-bottom{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100%{
+        opacity:1;
+        transform: translateY(0);
+    }
+
+
+}

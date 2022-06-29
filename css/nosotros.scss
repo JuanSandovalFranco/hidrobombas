@@ -1,0 +1,74 @@
+@import "base/variables";
+@import "base/base";
+@import "base/transitions";
+@import "base/mixins";
+@import "components/header";
+@import "components/footer";
+
+
+.main{
+
+    margin: 10vh 0;
+
+    .banner{
+        width: 100vw;
+        max-width: 100%;
+        height: 60vh;
+        background: no-repeat center fixed url(../assets/hidraulico.jpg);
+        background-size: cover;
+        backdrop-filter: brightness(60%);
+
+
+        .banner-title{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            color: white;
+            font-size: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+    
+        }
+    }
+
+
+
+    .about-us{
+        width: 90%;
+        margin: 4rem auto;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        .title{
+            text-align: center;
+        }
+
+
+        .text{
+            font-size: 2rem;
+            line-height:1.8;
+        }
+
+
+    }
+
+    .section{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+        img{
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+
+
+}
