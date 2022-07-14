@@ -49,6 +49,12 @@ h6 {
   }
 }
 
+@media screen and (max-width: 860px) {
+  html {
+    font-size: 8px;
+  }
+}
+
 @-webkit-keyframes animation-fade {
   0% {
     opacity: 0;
