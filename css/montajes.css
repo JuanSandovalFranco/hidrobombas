@@ -430,7 +430,7 @@ h6 {
 }
 
 .main .section .header-image {
-  margin: 4rem;
+  margin: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,6 +444,32 @@ h6 {
 
 .main .section .header-image img {
   border-radius: 10px;
+  -webkit-animation: animacion 2s;
+          animation: animacion 2s;
+  -webkit-box-shadow: 50px 50px #1385d1;
+          box-shadow: 50px 50px #1385d1;
+}
+
+@-webkit-keyframes animacion {
+  0% {
+    -webkit-box-shadow: -100px -100px #1385d1;
+            box-shadow: -100px -100px #1385d1;
+  }
+  100% {
+    -webkit-box-shadow: 50px 50px #1385d1;
+            box-shadow: 50px 50px #1385d1;
+  }
+}
+
+@keyframes animacion {
+  0% {
+    -webkit-box-shadow: -100px -100px #1385d1;
+            box-shadow: -100px -100px #1385d1;
+  }
+  100% {
+    -webkit-box-shadow: 50px 50px #1385d1;
+            box-shadow: 50px 50px #1385d1;
+  }
 }
 
 .main .section .service-image {
@@ -504,17 +530,19 @@ h6 {
 .main .tabs .tabs-content div {
   margin: 2rem 0;
   padding: 2rem;
-  opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  display: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.main .tabs .tabs-content div p {
+  font-size: 2rem;
 }
 
 .main .tabs .tabs-content .active {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .animacion-to-up {

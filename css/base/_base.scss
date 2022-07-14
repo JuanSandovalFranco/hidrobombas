@@ -1,45 +1,59 @@
 @import "./variables";
 
-*,*::before,*::after{
-    margin:0;
+*,
+*::before,
+*::after {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
+    line-height: 1.5;
     scroll-behavior: smooth;
 }
 
-body{
-    font-family:"Roboto" ,sans-serif ;
+body {
+    font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
-    color:$color-grey-dark;
+    color: $color-grey-dark;
+    
 
 }
 
 
-h1{
+h1 {
     font-size: 8rem;
 }
 
-h2{
+h2 {
     font-size: 6rem;
 }
 
-h3{
+h3 {
     font-size: 5rem;
 }
 
 
-h4{
+h4 {
     font-size: 4rem;
 }
 
-h5{
+h5 {
     font-size: 4rem;
 }
 
-h6{
+h6 {
     font-size: 2rem;
 }
+
+
+@media screen and (max-width:860px) {
+
+    html{
+        font-size: 8px;
+    }
+}
+
+

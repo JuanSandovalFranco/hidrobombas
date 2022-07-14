@@ -520,132 +520,30 @@ h6 {
 }
 
 .main {
-  margin: 10vh 0 0 0;
-  overflow: hidden;
+  margin: 20vh auto;
+  overflow-wrap: break-word;
 }
 
-.main .slide {
-  width: 100vw;
-  height: 80vh;
+.main h1 {
+  margin: 5rem;
+  color: #2c2c2c;
 }
 
-.main .slide .swiper-content .slide-image {
-  width: 100%;
-  height: 80vh;
-  -webkit-filter: brightness(40%);
-          filter: brightness(40%);
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.main .slide .swiper-content {
-  position: relative;
-}
-
-.main .slide .swiper-content .slide-content {
-  margin: 0 auto;
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 4rem;
-}
-
-.main .slide .swiper-content .slide-content .slide-title {
-  font-size: 7.5rem;
-  font-weight: 800;
-  text-transform: capitalize;
-}
-
-.main .slide .swiper-content .slide-content .slide-text {
-  width: 50%;
-  font-size: 1.8rem;
-}
-
-.main .slide .swiper-content .slide-content .button {
-  color: white;
-  background: #1A76A5;
-  width: 30%;
-  min-width: 20rem;
-  height: 5rem;
+.main h2 {
   text-align: center;
-  text-decoration: none;
-  font-size: 2rem;
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  color: black;
 }
 
-.main .slide .swiper-content .slide-content .button:hover {
-  background: #125373;
-}
-
-.main .information {
-  margin: 4rem;
-  padding: 5rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.main .information .cards-information {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  gap: 5rem;
-}
-
-.main .information .cards-information i {
-  color: #1A76A5;
-  font-size: 5rem;
-}
-
-.main .information .cards-information .title-info {
-  font-size: 4rem;
+.main .title-terciary {
   color: #303030;
+  margin: 10rem;
 }
 
-.main .information .cards-information .title-info + p {
-  font-size: 2rem;
-}
-
-.main .about-services {
-  margin: 4rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  padding: 2rem;
-  gap: 5rem;
-}
-
-.main .about-services .image-service {
+.main .header-image {
+  margin: 5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -654,172 +552,132 @@ h6 {
           align-items: center;
 }
 
-.main .about-services .image-service-secondary img {
-  width: 80%;
+.main .header-image img {
+  width: 60%;
+  max-height: 100vh;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .gallery-image {
+  margin: 10rem 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.main .gallery-image img {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.315);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.315);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .gallery-image img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main .gallery-image:hover img:not(:hover) {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.main .service {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+}
+
+.main img {
+  width: 50%;
   height: 80%;
 }
 
-.main .about-services .image {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
+.main h1 {
+  text-align: center;
 }
 
-.main .about-services .description-service {
-  width: 90%;
+.main .tabs {
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 4rem;
-}
-
-.main .about-services h2 {
-  color: #1A76A5;
-}
-
-.main .about-services span {
-  color: #e7e00f;
-}
-
-.main .about-services .description {
-  font-size: 1.8rem;
-  color: #a8a8a8;
-}
-
-.main .about-services .button-link {
-  width: 50%;
-  color: #1A76A5;
   padding: 2rem;
-  font-size: 2rem;
-  text-decoration: none;
-  border-radius: 5px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  text-align: center;
 }
 
-.main .about-services .button-link:hover {
-  color: white;
-  background-color: #1A76A5;
-  padding-left: 4rem;
-}
-
-.main .about {
-  width: 100vw;
-  height: 800px;
-  max-width: 100%;
-  background: -webkit-gradient(linear, right top, left top, from(#15B1BD), color-stop(#1A76A5), to(#125373));
-  background: linear-gradient(to left, #15B1BD, #1A76A5, #125373);
-  -webkit-clip-path: polygon(0 9%, 100% 20%, 100% 100%, 0% 100%);
-          clip-path: polygon(0 9%, 100% 20%, 100% 100%, 0% 100%);
-  position: relative;
-}
-
-.main .about .content {
-  width: 80%;
+.main .tabs .tabs-select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10rem;
-  text-align: center;
-  color: white;
-  position: absolute;
-  top: 30%;
-  left: 10%;
+  padding: 2rem;
 }
 
-.main .about p {
-  font-size: 3rem;
-}
-
-.main .about .link {
-  color: white;
+.main .tabs .tabs-select button {
   background: transparent;
+  font-size: 2rem;
+  padding: 2rem 4rem;
   border: none;
-  font-size: 3rem;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  text-decoration: none;
+  cursor: pointer;
 }
 
-.main .about .link:hover {
-  padding-left: 2rem;
+.main .tabs .tabs-select button.active {
+  color: #1A76A5;
+  border-bottom: 2px solid #1A76A5;
 }
 
-.location {
-  width: 90%;
-  margin: 10rem auto;
+.main .tabs .tabs-content div {
+  overflow: auto;
 }
 
-.location h2 {
-  font-size: 10rem;
-  text-align: center;
+.main .tabs .tabs-content div {
+  margin: 2rem 0;
+  padding: 2rem;
+  display: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-.location iframe {
-  margin-top: 10rem;
+.main .tabs .tabs-content div p {
+  font-size: 1.8rem;
 }
 
-.fade,
-.animacion-to-up,
-.animacion-to-right,
-.animacion-to-left,
-.animacion-to-bottom {
-  opacity: 0;
+.main .tabs .tabs-content .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.active {
-  opacity: 1;
-}
-
-.fade.active {
-  -webkit-animation: animation-fade 1s;
-          animation: animation-fade 1s;
-}
-
-.animacion-to-up.active {
+.animacion-to-up {
   -webkit-animation: animation-to-up 1s;
           animation: animation-to-up 1s;
 }
 
-.animacion-to-right.active {
-  -webkit-animation: animation-to-right 1s;
-          animation: animation-to-right 1s;
-}
-
-.animacion-to-left.active {
-  -webkit-animation: animation-to-left 1s;
-          animation: animation-to-left 1s;
-}
-
-.animacion-to-bottom.active {
-  -webkit-animation: animation-to-bottom 1s;
-          animation: animation-to-bottom 1s;
-}
-
 @media screen and (max-width: 860px) {
-  .main .about-services {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
+  .main .header-image img {
+    width: 90%;
   }
-  .main .image-service-secondary {
-    margin: auto;
+  .main .service {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .service img {
+    width: 100%;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=servicios.css.map */

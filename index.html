@@ -14,13 +14,19 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1206/1206405.png" />
   <link rel="canonical" href="https://hidrobombas.com.co" />
-  <title>Hidrobombas , consigue el mejor servicio al mejor precio</title>
+  <title>Hidrobombas</title>
 </head>
 
 <body>
   <header class="header">
+    <button class="menu">
+      <i class="fa-solid fa-bars menu-icon"></i>
+    </button>
     <a href="/"><img src="./assets/hidrobomba.png" alt="" class="logo" /></a>
     <nav class="navbar">
+      <button class="menu-close">
+        <i class="fa-solid fa-x icon-close"></i>
+      </button>
       <ul>
         <li class="nav">
           <a href="/nosotros.html" class="nav__links">Nosotros</a>
@@ -28,10 +34,10 @@
         <li class="nav services">
           <a href="#" class="nav__links">Servicios</a>
           <ul>
-            <li><a href="montajes.html">Montaje de sistemas hidraulicos</a></li>
-            <li><a href="">Mantenimiento de electrobombas</a></li>
-            <li><a href="">Impermeabilizacion de tanques</a></li>
-            <li><a href="">Tableros de control</a></li>
+            <li><a href="instalacion.html">Montaje de sistemas hidraulicos</a></li>
+            <li><a href="mantenimiento.html">Mantenimiento de electrobombas</a></li>
+            <li><a href="lavado.html">Impermeabilizacion de tanques</a></li>
+            <li><a href="tableros.html">Tableros de control</a></li>
           </ul>
         </li>
         <li class="nav">
@@ -48,44 +54,42 @@
         <!-- Slides -->
         <div class="swiper-slide">
           <div class="swiper-content">
-            <img class="slide-image" src="assets/sistema-hidraulico.jpg" alt="" />
+            <img class="slide-image" src="assets/ingeniero.jpg" alt="" />
             <div class="slide-content">
-              <h2 class="slide-title">Servicio tecnico y especializado</h2>
+              <h2 class="slide-title">Servicio profesional </h2>
               <p class="slide-text">
-                Mantenimiento y reparacion de bombas con el asesoramiento de
-                los mejores expertos en el area al mejor precios
+                Somos un equipo comprometido con mas de 5 años de experiencia ofrenciendo diferentes servicios de
+                instalacion de equipos y mantenimiento
+
               </p>
-              <a class="button" href="contacto.html">Contactanos</a>
+              <a class="button"
+                href="https://api.whatsapp.com/send?phone=3106660181&text=necesito%20una%20cotizaci%C3%B3n">Contactanos</a>
             </div>
           </div>
+
         </div>
 
         <div class="swiper-slide">
           <div class="swiper-content">
-            <img class="slide-image" src="assets/hidraulico.jpg" alt="" />
+            <img class="slide-image" src="assets/sistema-hidraulico.jpg" alt="" />
             <div class="slide-content">
               <h2 class="slide-title">Instalacion de sistemas hidraulicos</h2>
               <p class="slide-text">
-                Instalacion de equipos y redes de sistemas hidraulicos con
-                servicios de mantenimiento para motobombas
+                Instalacion y montajes hidraulicos con tubos de succion y valvulas para redes hidraulicas
               </p>
-              <a class="button" href="contacto.html">Contactanos</a>
+              <a class="button" href="instalacion.html">Saber mas</a>
             </div>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="swiper-content">
-            <img class="slide-image" src="assets/hidraulico.jpg" alt="" />
+            <img class="slide-image" src="assets/mantenimiento.jpg" alt="" />
             <div class="slide-content">
-              <h2 class="slide-title">Servicio tecnico y especializado</h2>
+              <h2 class="slide-title">Mantenimiento de electrobombas</h2>
               <p class="slide-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Autem facere sit accusantium obcaecati voluptatem ut
-                exercitationem, repudiandae dolor aspernatur esse
-                consequuntur, quis eum magni cupiditate numquam itaque eos
-                quia doloremque.
+                Mantenimiento de electrobombas revision de partes y revision de filtros
               </p>
-              <a class="button" href="contacto.html">Contactanos</a>
+              <a class="button" href="mantenimiento.html">Saber mas</a>
             </div>
           </div>
         </div>
@@ -100,6 +104,41 @@
 
     <!--end swiper-->
 
+
+    <div class="information">
+      <div class="cards-information">
+        <i class="fa-solid fa-briefcase"></i>
+        <h3 class="title-info">
+          Excelente Servicio
+        </h3>
+        <p>
+          Ofrecemos un servicio 24/7 con el mejor equipo de expertos que estaran dispuestos a ayudarle en cualquier
+          situacion
+        </p>
+      </div>
+      <div class="cards-information">
+        <i class="fa-solid fa-hand-fist"></i>
+        <h3 class="title-info">
+          Trabajo de calidad
+        </h3>
+        <p>
+          Nuestros proyectos y trabajos, con los cuales contamos con expertos en el area que lo asesoraran , ademas
+          trabajamos con maquinaria y herramienta de la mejor calidad
+        </p>
+      </div>
+      <div class="cards-information">
+        <i class="fa-solid fa-earth-africa"></i>
+        <h3 class="title-info">
+          Vision Global
+        </h3>
+        <p>
+          Como empresa colombiana tenemos una vision global , estamos en constante expansion y busqueda de nuevos
+          mercados
+          a nivel global
+        </p>
+      </div>
+    </div>
+
     <section id="section" class="about-services animacion-to-up">
       <div class="image-service">
         <img class="image" src="assets/hidraulico.jpg" alt="" />
@@ -107,10 +146,9 @@
       <div class="description-service">
         <h2>Montajes de <span>sistemas hidraulicos</span></h2>
         <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nulla
-          suscipit libero inventore, repudiandae voluptas aperiam, minus
-          consequatur autem odio qui explicabo est facilis ut? Libero, cum.
-          Beatae, rerum dolorem!
+          Contrate a los mejores expertos para la realizacion de montajes hidraulicos, ofreciendo servicios como
+          desmonte e instalacion de
+          tuberias suministro e instalacion de valvulas
         </p>
         <a class="button-link" href="hidraulico.html">Conocer Mas &#8594;</a>
       </div>
@@ -119,16 +157,15 @@
       <div class="description-service">
         <h2>Mantenimiento de electrobombas</h2>
         <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nulla
-          suscipit libero inventore, repudiandae voluptas aperiam, minus
-          consequatur autem odio qui explicabo est facilis ut? Libero, cum.
-          Beatae, rerum dolorem!
+          Mantenga su equipo en buen estado con el mantenieminto periodico que puede ser preventivo para evitar fallas
+          en sus equipos o el mantenimiento de maquinaria que presente algun problema para hacer el respectivo
+          mantenimiento y que vuelva a su estado original
         </p>
         <a class="button-link" href="hidraulico.html">Conocer Mas &#8594;</a>
       </div>
       <div class="image-service image-service-secondary">
-        <img src="assets/hidraulica-2.png" alt="" />
-        <img src="assets/hidraulica-3.png" alt="" />
+        <img src="assets/electrobomba.png" alt="" />
+        <img src="assets/electrobomba-2.png" alt="" />
       </div>
     </section>
     <section id="section3" class="about-services animacion-to-left">
@@ -138,28 +175,21 @@
       <div class="description-service">
         <h2>Impermeabilizacion</h2>
         <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nulla
-          suscipit libero inventore, repudiandae voluptas aperiam, minus
-          consequatur autem odio qui explicabo est facilis ut? Libero, cum.
-          Beatae, rerum dolorem!
+          Impermeabilizacion y lavado de tanques de agua con membrana y productos SIKA , trabajando con productos de la
+          mas alta calidad para realizar el mejor trabajo
         </p>
         <a class="button-link" href="hidraulico.html">Conocer Mas &#8594;</a>
       </div>
     </section>
-    <div class="benefits">
-      <div class="card">
 
-      </div>
-    </div>
     <section class="location">
       <div class="description">
         <h2>Ubicacion</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit est in laboriosam. Perferendis nam, error
-          autem iure dolore tempore corrupti saepe ipsum laborum ullam architecto quia amet voluptatum cumque ex.</p>
+
       </div>
-      <iframe
+      <iframe style="width:90%;margin:5rem auto;display: flex;border: none;"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.0107093646216!2d-74.12618008577844!3d4.592100443869616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f992928b4cee9%3A0x539f03e456727685!2sCentro%20Mayor%20Centro%20Comercial!5e0!3m2!1ses!2sco!4v1653412045213!5m2!1ses!2sco"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <section>
@@ -186,19 +216,21 @@
       <div class="section">
         <p>Nosotros</p>
         <ul>
-          <li><a href="">Quienes somos</a></li>
-          <li><a href="">Contacto</a></li>
-          <li><a href="">Politica de privacidad</a></li>
-          <li><a href="">Terminos y condiciones de uso</a></li>
+          <li><a href="nosotros.html">Quienes somos</a></li>
+          <li><a
+              href="https://api.whatsapp.com/send?phone=3106660181&text=necesito%20una%20cotizaci%C3%B3n">Contacto</a>
+          </li>
+          <li><a href="#"">Politica de privacidad</a></li>
+          <li><a href=" #">Terminos y condiciones de uso</a></li>
         </ul>
       </div>
       <div class="section">
         <p>Servicios</p>
         <ul>
-          <li><a href="">Montaje sistemas hidraulicos</a></li>
-          <li><a href="">Mantenimiento Bombas hidraulicas</a></li>
-          <li><a href="">Impermeabilizacion</a></li>
-          <li><a href="">Tableros de control</a></li>
+          <li><a href="instalacion.html">Montaje sistemas hidraulicos</a></li>
+          <li><a href="mantenimiento.html">Mantenimiento Bombas hidraulicas</a></li>
+          <li><a href="lavado.html">Impermeabilizacion</a></li>
+          <li><a href="tableros.html">Tableros de control</a></li>
       </div>
       <div class="section">
         <div class="social-media">
@@ -215,6 +247,7 @@
   <script src="https://kit.fontawesome.com/d5ce6c27ca.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="index.js"></script>
+  <script src="menu.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,206 @@
+@import "./base/variables";
+@import "./base/base";
+@import "./base/transitions";
+@import "./base/mixins";
+@import "./components/header";
+@import "./components/footer";
+
+
+.main {
+
+    margin: 20vh auto;
+
+
+    
+    overflow-wrap: break-word;
+    
+
+    h1{
+        margin: 5rem;
+        color: rgb(44, 44, 44);
+    }
+
+
+
+    h2 {
+        text-align: center;
+        color: black;
+    }
+
+
+    .title-terciary {
+        color: rgb(48, 48, 48);
+        margin: 10rem;
+
+    }
+
+    .header-image {
+        margin: 5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 60%;
+            max-height: 100vh;
+            border-radius: 20px;
+            object-fit: cover;
+
+        }
+
+    }
+
+
+    .gallery-image {
+        margin: 10rem 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+
+
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            transition: all 0.5s;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.315);
+            object-fit: cover;
+
+            &:hover {
+                transform: scale(1.1);
+
+
+            }
+
+        }
+
+
+        &:hover img:not(:hover) {
+            transform: scale(0.9);
+        }
+
+
+    }
+
+    .service {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+
+
+    }
+
+    img {
+        width: 50%;
+        height: 80%;
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+
+
+
+
+
+    .tabs {
+        margin: 0 auto;
+        padding: 2rem;
+
+
+
+        .tabs-select {
+            display: flex;
+            padding: 2rem;
+
+            button {
+                background: transparent;
+                font-size: 2rem;
+                padding: 2rem 4rem;
+                border: none;
+                cursor: pointer;
+
+            }
+
+
+            button.active {
+                color: $color-primary;
+                border-bottom: 2px solid $color-primary;
+
+
+
+            }
+
+
+        }
+
+
+        .tabs-content div {
+            overflow: auto;
+        }
+
+
+        .tabs-content div {
+            margin: 2rem 0;
+            padding: 2rem;
+            display: none;
+            transition: all 1s;
+
+
+
+            p {
+
+                font-size: 1.8rem;
+
+            }
+
+        }
+
+        .tabs-content .active {
+            display: flex;
+
+        }
+
+
+
+    }
+
+}
+
+
+.animacion-to-up {
+    animation: animation-to-up 1s;
+}
+
+
+
+@media screen and (max-width:860px) {
+
+.main{
+
+
+
+
+    .header-image{
+        img{
+            width: 90%;
+        }
+    }
+
+    .service{
+        flex-direction: column;
+
+
+        img{
+            width: 100%;
+        }
+
+    }
+}
+
+}

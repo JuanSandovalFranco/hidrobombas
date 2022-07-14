@@ -20,7 +20,19 @@ document.querySelector(".tabs-select").addEventListener("click", (e) => {
       if (el.className.includes("active")) {
         e.target.classList.add("active");
         bodyTab.children[i].classList.add("active");
+        
+      
+        
       }
     });
+
+
+    
+
   }
 });
+
+
+
+
+
