@@ -17,6 +17,8 @@
     overflow: hidden;
 
 
+    overflow-wrap: break-word;
+
    
 
     .slide {
@@ -39,19 +41,20 @@
             position: relative;
 
             .slide-content {
+                height: 80%;
                 margin: 0 auto;
                 position: absolute;
                 top: 10%;
                 left: 10%;
-                width: 80%;
                 color: white;
                 display: flex;
                 flex-direction: column;
-                gap: 4rem;
+                justify-content: space-around;
+                
 
 
                 .slide-title {
-                    font-size: 7.5rem;
+                    font-size: 7rem;
                     font-weight: 800;
                     text-transform: capitalize;
 
@@ -60,13 +63,13 @@
                 }
 
                 .slide-text {
-                    width: 50%;
-                    font-size: 1.8rem;
+                    width: 80%;
+                    font-size: 3rem;
                     
                 }
 
                 .button {
-                    @include boton(primary, null, 30%);
+                    @include boton(primary, null, 20%);
                 }
 
             }
@@ -197,7 +200,7 @@
 
     .about {
         width: 100vw;
-        height: 800px;
+        height: 1000px;
         max-width: 100%;
         background: linear-gradient(to left, $color-primary-light, $color-primary, $color-primary-dark);
         clip-path: polygon(0 9%, 100% 20%, 100% 100%, 0% 100%);

@@ -49,12 +49,6 @@ h6 {
   }
 }
 
-@media screen and (max-width: 860px) {
-  html {
-    font-size: 8px;
-  }
-}
-
 @-webkit-keyframes animation-fade {
   0% {
     opacity: 0;
@@ -570,8 +564,8 @@ h6 {
   margin: 10rem 4rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
 }
 

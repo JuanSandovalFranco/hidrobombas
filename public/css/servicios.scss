@@ -54,7 +54,7 @@
     .gallery-image {
         margin: 10rem 4rem;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
         gap: 2rem;
 
 
@@ -182,9 +182,6 @@
 @media screen and (max-width:860px) {
 
 .main{
-
-
-
 
     .header-image{
         img{
