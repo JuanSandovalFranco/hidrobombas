@@ -9,4 +9,14 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
+  breakpoints: {
+    860: {
+      slidesPerView: 3,
+    },
+
+    150: {
+      slidesPerView: 1,
+    },
+  },
 });
